@@ -1,10 +1,15 @@
 install:
-	#install commands
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	# Install Py lib
+	#pip install --upgrade pip &&\
+	#	pip install -r requirements.txt
+	cat requirements.txt | xargs poetry add
 
 post-install:
-	python -m textblob.download_corpora
+	#python -m textblob.download_corpora
+
+git:
+	# Update Git Repo
+	git add . && dt=`date +"%Y-%m-%d %T"` && git commit -m "$dt" && git push
 
 format:
 	#format code
