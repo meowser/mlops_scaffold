@@ -11,6 +11,8 @@ jobs:
         python-version: 3.8
     - name: Install Poetry
       uses: snok/install-poetry@v1
+      run: |
+        cat requirements.txt | xargs poetry add
 
     #- name: Install dependencies
       #run: |
