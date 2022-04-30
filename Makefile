@@ -9,7 +9,7 @@ post-install:
 
 git:
 	# Update Git Repo
-	git add . && dt=`date +"%Y-%m-%d %T"` && git commit -m "$dt" && git push
+	bash sync_git.sh
 
 format:
 	#format code
