@@ -1,9 +1,11 @@
 install:
 	# Install Py lib
-	cat requirements.txt | xargs poetry add
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
+	#cat requirements.txt | xargs poetry add
 
 post-install:
-	#python -m textblob.download_corpora
+	python -m textblob.download_corpora
 
 git:
 	# Update Git Repo
