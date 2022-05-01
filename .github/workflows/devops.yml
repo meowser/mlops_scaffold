@@ -14,11 +14,11 @@ jobs:
     - name: Install Py Libraries------
       run: |
         cat requirements.txt | xargs poetry add
+    - name: Install Corpora
+      run: |
+        make install 
+        python -m textblob.download_corpora
 
-    #- name: Install dependencies
-      #run: |
-        #make install
-        #python -m textblob.download_corpora
     - name: Lint with pylint
       run: |
         make lint

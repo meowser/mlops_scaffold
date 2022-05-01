@@ -11,14 +11,15 @@ def test_read_main():
 
 
 def test_read_phrase():
-    response = client.get("/phrase/Barack Obama")
+    response = client.get("/phrase/Terrence Gilliam")
     assert response.status_code == 200
     assert response.json() == {
         "result": [
-            "barack hussein obama ii",
-            "bə-rahk hoo-sayn oh-bah-mə",
-            "august",
-            "american politician",
-            "44th president",
+            "terrence vance gilliam",
+            "november",
+            "american-born",
+            "british film director",
+            "monty python",
+            "comedy troupe",
         ]
     }
