@@ -33,4 +33,6 @@ deploy:
 	#docker tag fastapi-wiki:latest 561744971673.dkr.ecr.us-east-1.amazonaws.com/fastapi-wiki:latest
 	#docker push 561744971673.dkr.ecr.us-east-1.amazonaws.com/fastapi-wiki:latest
 
-all: install post-install lint test deploy
+all:
+	# AWS Codebuild 
+	install post-install lint test deploy
