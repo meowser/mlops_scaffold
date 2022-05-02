@@ -162,7 +162,8 @@ deploy:
 
 **GH Actions**
 
-This solution is deployed to ECR using **minimal** effects from the AWS Console.
+This solution is deployed to ECR using **minimal, almost negligible** time in AWS Console.
+> :exclamation: The AWS Console is good for learning but deployments are not robust.
 
 
 ```shell
