@@ -45,7 +45,7 @@ Learn to build real-world Python Microservices that enable Continuous Delivery. 
 * 1:34:00 Building container
 * 1:54:00 Setup AWS Code Build push to ECR (Elastic Container Registry)
 * 2:02:00 Setup AWS Code Build to ECR to AWS App Runner Continuous Delivery
-
+* meow mike
 Watch on Pragmatic AI Labs YouTube: https://lnkd.in/e5xHfaMG
 Watch on O'Reilly Media: https://lnkd.in/eAECgyCi
 
